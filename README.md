@@ -31,3 +31,35 @@ The **Two Pointer Technique** is an efficient approach used in arrays and string
 
 ### Space Complexity
 - **O(1)** (constant extra space)
+
+## Sliding Window Technique (DSA)
+
+The **Sliding Window Technique** is used to process **subarrays or substrings efficiently** by maintaining a window (range) that moves across the array or string.
+
+Instead of recalculating values for every subarray, the window **slides forward** and updates the result in **O(n) time**.
+
+### When to Use
+- When the problem involves **subarrays or substrings**
+- When working with **contiguous elements**
+- When asked to find **maximum, minimum, or count of a subarray**
+- When brute force solution is **O(n²)**
+
+### Basic Idea
+1. Initialize two pointers: `left` and `right`.
+2. Expand the window by moving `right`.
+3. Update the result while the window is valid.
+4. Shrink the window by moving `left` if needed.
+5. Continue until `right` reaches the end.
+
+### Common Applications
+- **Maximum sum subarray of size k**
+- **Longest substring without repeating characters**
+- **Minimum window substring**
+- **Longest subarray with given sum**
+- **Count of valid subarrays**
+
+### Time Complexity
+- **O(n)** because each element is visited at most twice.
+
+### Space Complexity
+- **O(1)** or **O(k)** depending on the problem.
