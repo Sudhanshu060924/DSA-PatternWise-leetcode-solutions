@@ -63,3 +63,35 @@ Instead of recalculating values for every subarray, the window **slides forward*
 
 ### Space Complexity
 - **O(1)** or **O(k)** depending on the problem.
+
+## Fast and Slow Pointer Technique (Floyd’s Cycle Detection)
+
+The **Fast and Slow Pointer Technique** uses two pointers moving at **different speeds** to solve problems related to cycles or middle elements in linked lists or arrays.
+
+### When to Use
+- When working with **linked lists**
+- When detecting **cycles in a list**
+- When finding the **middle of a linked list**
+- When checking if a **number is a happy number**
+- When finding the **start of a cycle**
+
+### Basic Idea
+1. Initialize two pointers:
+   - `slow` moves **one step at a time**
+   - `fast` moves **two steps at a time**
+2. Traverse the data structure.
+3. If there is a **cycle**, the pointers will eventually meet.
+4. If `fast` reaches the end, then **no cycle exists**.
+
+### Common Applications
+- **Detect cycle in linked list**
+- **Find middle of linked list**
+- **Find start of cycle**
+- **Happy number problem**
+- **Remove cycle in linked list**
+
+### Time Complexity
+- **O(n)**
+
+### Space Complexity
+- **O(1)** (constant extra space)
