@@ -9,6 +9,7 @@
           next = null;
       }
  }
+ 
 
  class solution {
     public ListNode detectCycle(ListNode head) {
