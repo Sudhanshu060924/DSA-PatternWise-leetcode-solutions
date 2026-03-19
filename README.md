@@ -95,3 +95,31 @@ The **Fast and Slow Pointer Technique** uses two pointers moving at **different 
 
 ### Space Complexity
 - **O(1)** (constant extra space)
+
+
+# Kadane’s Algorithm (Max / Min Sum & Product Subarray)
+
+Kadane’s Algorithm is used to solve problems related to **contiguous subarrays** efficiently in **O(n)** time.
+
+---
+
+## 📌 Key Concepts
+
+- **Subarray** → Must be **contiguous**
+- Array may contain:
+  - Positive numbers
+  - Negative numbers
+  - Zeros
+- At every index, we decide:
+  - 👉 **Extend previous subarray**
+  - 👉 **Start new subarray**
+
+---
+
+## 🧠 Core Idea (Index by Index)
+
+At each index `i`, compute:
+
+```java
+v1 = best + arr[i];   // extend previous
+v2 = arr[i];          // start new
