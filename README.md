@@ -123,3 +123,52 @@ At each index `i`, compute:
 ```java
 v1 = best + arr[i];   // extend previous
 v2 = arr[i];          // start new
+
+# 📘 Prefix Sum (Partial Sum) - Complete Guide
+
+## 📌 What is Prefix Sum?
+
+Prefix Sum is a technique used to preprocess an array such that we can efficiently calculate the sum of any subarray.
+
+### ✅ Definition:
+prefix[i] = a[0] + a[1] + a[2] + ... + a[i]
+
+---
+
+## ⚡ Why Use Prefix Sum?
+
+- Fast subarray sum queries
+- Reduces time complexity from **O(n²) → O(n)**
+- Used in:
+  - Subarray sum
+  - Range queries
+  - Pivot index
+  - Count of subarrays
+
+---
+
+## 🧠 Flow (Concept)
+
+Array → Subarrays → Prefix Sum
+
+Then solve:
+- Sum of subarray
+- Count of subarrays (k)
+- Max / Min sum
+- Negative numbers handling
+
+Techniques used:
+- HashMap → sum = k problems
+- Deque → shortest subarray ≥ k
+- Merge Sort → range sum problems
+
+---
+
+## 🧮 Prefix Sum Formula
+
+```java
+prefix[0] = arr[0];
+
+for(int i = 1; i < n; i++){
+    prefix[i] = prefix[i - 1] + arr[i];
+}
