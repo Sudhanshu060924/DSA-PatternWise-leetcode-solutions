@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/subarray-sum-equals-k?listId=552y65ke&page=1
 
+import java.util.HashMap;
+
 class Solution {
     public int subarraySum(int[] nums, int k) {
         HashMap<Integer,Integer> map = new HashMap<>();
