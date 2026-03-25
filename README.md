@@ -116,12 +116,90 @@ Kadane’s Algorithm is used to solve problems related to **contiguous subarrays
 
 ---
 
-## 🧠 Core Idea (Index by Index)
+## 📘 Prefix Sum (Partial Sum) -
 
--At each index `i`, compute:
+## 📌 What is Prefix Sum?
 
-```java
-v1 = best + arr[i];   // extend previous
-v2 = arr[i];          // start new
+Prefix Sum is a technique used to preprocess an array such that we can efficiently calculate the sum of any subarray.
+
+### ✅ Definition:
+prefix[i] = a[0] + a[1] + a[2] + ... + a[i]
 
 ---
+
+## ⚡ Why Use Prefix Sum?
+
+- Fast subarray sum queries
+- Reduces time complexity from **O(n²) → O(n)**
+- Used in:
+  - Subarray sum
+  - Range queries
+  - Pivot index
+  - Count of subarrays
+
+---
+
+## 🧠 Flow (Concept)
+
+Array → Subarrays → Prefix Sum
+
+Then solve:
+- Sum of subarray
+- Count of subarrays (k)
+- Max / Min sum
+- Negative numbers handling
+
+Techniques used:
+- HashMap → sum = k problems
+- Deque → shortest subarray ≥ k
+- Merge Sort → range sum problems
+
+---
+
+
+
+## 🧩 Merge Intervals (DSA Pattern)
+
+The **Merge Intervals** pattern is used to solve problems involving overlapping ranges. It is commonly used in scheduling, timelines, and interval-based queries.
+
+---
+
+## 🚀 Problem
+
+Given a list of intervals, merge all overlapping intervals and return a list of non-overlapping intervals.
+
+---
+
+## 📌 Example
+
+Input:  
+[[1,3],[2,6],[8,10],[15,18]]
+
+Output:  
+[[1,6],[8,10],[15,18]]
+
+---
+
+## 🧠 Intuition
+
+- Sort intervals based on start time  
+- Compare current interval with the last merged interval  
+- If overlapping → merge them  
+- If not → add as a new interval  
+
+---
+
+## ⚙️ Algorithm
+
+1. Sort intervals by start time  
+2. Initialize an empty result list  
+3. Loop through each interval:
+   - If no overlap → add interval  
+   - If overlap → merge by updating end  
+4. Return result  
+
+---
+
+
+
+
