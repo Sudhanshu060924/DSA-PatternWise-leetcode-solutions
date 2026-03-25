@@ -118,9 +118,10 @@ Kadane’s Algorithm is used to solve problems related to **contiguous subarrays
 
 ## 🧠 Core Idea (Index by Index)
 
-At each index `i`, compute:
+-At each index `i`, compute:
 
 ```java
 v1 = best + arr[i];   // extend previous
 v2 = arr[i];          // start new
+
 ---
