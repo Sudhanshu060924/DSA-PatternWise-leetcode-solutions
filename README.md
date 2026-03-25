@@ -123,8 +123,9 @@ At each index `i`, compute:
 ```java
 v1 = best + arr[i];   // extend previous
 v2 = arr[i];          // start new
+---
 
-# 📘 Prefix Sum (Partial Sum) - Complete Guide
+## 📘 Prefix Sum (Partial Sum) - Complete Guide
 
 ## 📌 What is Prefix Sum?
 
@@ -172,6 +173,7 @@ prefix[0] = arr[0];
 for(int i = 1; i < n; i++){
     prefix[i] = prefix[i - 1] + arr[i];
 }
+---
 
 # 🧩 Merge Intervals (DSA Pattern)
 
