@@ -172,3 +172,45 @@ prefix[0] = arr[0];
 for(int i = 1; i < n; i++){
     prefix[i] = prefix[i - 1] + arr[i];
 }
+
+# 🧩 Merge Intervals (DSA Pattern)
+
+The **Merge Intervals** pattern is used to solve problems involving overlapping ranges. It is commonly used in scheduling, timelines, and interval-based queries.
+
+---
+
+## 🚀 Problem
+
+Given a list of intervals, merge all overlapping intervals and return a list of non-overlapping intervals.
+
+---
+
+## 📌 Example
+
+Input:  
+[[1,3],[2,6],[8,10],[15,18]]
+
+Output:  
+[[1,6],[8,10],[15,18]]
+
+---
+
+## 🧠 Intuition
+
+- Sort intervals based on start time  
+- Compare current interval with the last merged interval  
+- If overlapping → merge them  
+- If not → add as a new interval  
+
+---
+
+## ⚙️ Algorithm
+
+1. Sort intervals by start time  
+2. Initialize an empty result list  
+3. Loop through each interval:
+   - If no overlap → add interval  
+   - If overlap → merge by updating end  
+4. Return result  
+
+---
