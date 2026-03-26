@@ -19,6 +19,7 @@ class Solution {
         if (insert == false) {
             list.add(new int[]{newInterval[0],newInterval[1]});
         }
+        
         List<int[]> merge = new ArrayList();
 
         int start1 = list.get(0)[0];
