@@ -200,6 +200,35 @@ Output:
 
 ---
 
+# 📚 Stack Data Structure (DSA Pattern)
+
+## 🚀 Overview
+The **Stack** is a linear data structure that follows the **LIFO (Last In First Out)** principle.  
+It is widely used in solving various DSA problems like expression evaluation, recursion, parsing, and more.
+
+---
+
+## 🧠 Core Operations
+
+| Operation | Description |
+|----------|------------|
+| `push(x)` | Insert element `x` on top |
+| `pop()` | Remove top element |
+| `peek()` / `top()` | Get top element |
+| `isEmpty()` | Check if stack is empty |
+
+---
+
+## ⏱️ Time Complexity
+
+| Operation | Complexity |
+|----------|------------|
+| Push | O(1) |
+| Pop | O(1) |
+| Peek | O(1) |
+
+---
+
 
 
 
