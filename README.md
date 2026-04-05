@@ -50,6 +50,7 @@ Instead of recalculating values for every subarray, the window **slides forward*
 3. Update the result while the window is valid.
 4. Shrink the window by moving `left` if needed.
 5. Continue until `right` reaches the end.
+   
 
 ### Common Applications
 - **Maximum sum subarray of size k**
