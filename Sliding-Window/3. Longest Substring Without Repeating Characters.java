@@ -13,6 +13,7 @@ class Solution {
             if (map.containsKey(ch)) {
                 left = Math.max(left, map.get(ch) + 1);
             }
+            
 
             map.put(ch, right);
             maxLength = Math.max(maxLength, right - left + 1);
