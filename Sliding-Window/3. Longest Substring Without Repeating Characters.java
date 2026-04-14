@@ -18,6 +18,7 @@ class Solution {
             map.put(ch, right);
             maxLength = Math.max(maxLength, right - left + 1);
         }
+        
 
         return maxLength;
     }
