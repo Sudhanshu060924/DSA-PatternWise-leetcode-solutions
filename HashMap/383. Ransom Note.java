@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/ransom-note?listId=552y65ke&page=1
 
+import java.util.HashMap;
+
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
 
