@@ -230,6 +230,120 @@ It is widely used in solving various DSA problems like expression evaluation, re
 
 ---
 
+# 📘 HashMap in Java (with Looping)
+
+## 📌 What is a HashMap?
+`HashMap` is a class in the Java Collection Framework that stores data in **key-value pairs**.
+
+- Keys are **unique**
+- Values can be duplicated
+- Does **not maintain insertion order**
+
+---
+
+## 📦 Import Package
+    import java.util.HashMap;
+    import java.util.Map;
+
+---
+
+## 🚀 Create a HashMap
+    HashMap<String, Integer> map = new HashMap<>();
+
+---
+
+## ➕ Add Elements
+    map.put("Apple", 10);
+    map.put("Banana", 20);
+    map.put("Mango", 15);
+
+---
+
+## 🔍 Access Elements
+    System.out.println(map.get("Apple")); // Output: 10
+
+---
+
+## ❌ Remove Element
+    map.remove("Banana");
+
+---
+
+## 🔁 Looping Through HashMap
+
+### 1. Using entrySet() (Recommended)
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+        System.out.println(entry.getKey() + " -> " + entry.getValue());
+    }
+
+---
+
+### 2. Loop Through Keys
+    for (String key : map.keySet()) {
+        System.out.println("Key: " + key);
+    }
+
+---
+
+### 3. Loop Through Values
+    for (Integer value : map.values()) {
+        System.out.println("Value: " + value);
+    }
+
+---
+
+### 4. Using forEach (Java 8+)
+    map.forEach((key, value) -> {
+        System.out.println(key + " -> " + value);
+    });
+
+---
+
+## 📊 Example Program
+    import java.util.HashMap;
+    import java.util.Map;
+
+    public class Main {
+        public static void main(String[] args) {
+
+            HashMap<String, Integer> map = new HashMap<>();
+
+            map.put("A", 1);
+            map.put("B", 2);
+            map.put("C", 3);
+
+            for (Map.Entry<String, Integer> entry : map.entrySet()) {
+                System.out.println(entry.getKey() + " : " + entry.getValue());
+            }
+        }
+    }
+
+---
+
+## ⚡ Key Points
+- Allows **one null key** and multiple null values  
+- Not thread-safe  
+- Average time complexity: **O(1)**  
+
+---
+
+## 🧠 When to Use
+Use `HashMap` when:
+- Fast lookup is required  
+- Order does not matter  
+- You need key → value mapping  
+
+---
+
+## 📚 Summary
+
+| Feature        | HashMap |
+|----------------|--------|
+| Order          | ❌ No |
+| Duplicate Keys | ❌ No |
+| Null Key       | ✅ One |
+| Performance    | ⚡ Fast |
+
 
 
 
