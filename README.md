@@ -22,6 +22,7 @@ Each folder represents a **DSA pattern** with its own explanation and examples:
 - 🧩 Merge Intervals
 - 📚 Stack
 - 🗂️ HashMap
+- 🔁 Reverse Linked List
 
 Each folder contains:
 - 📖 Concept explanation
