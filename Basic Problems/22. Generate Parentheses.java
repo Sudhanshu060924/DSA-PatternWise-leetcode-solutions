@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/generate-parentheses?listId=552y65ke&page=1
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
 
     public void solve(int open, int close, int n, String s, List<String> ans) {
