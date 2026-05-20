@@ -8,6 +8,7 @@ class Solution {
             n = n / 2;
         }
         if (n == 1)
+            
             return true;
         return false;
     }
