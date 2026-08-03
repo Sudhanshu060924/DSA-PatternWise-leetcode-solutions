@@ -8,6 +8,7 @@ class Solution {
         return fun(0,n);
         
     }
+    
     int fun(int i , int n){
         if(i == n) return 1;
         if(i>n) return 0;
