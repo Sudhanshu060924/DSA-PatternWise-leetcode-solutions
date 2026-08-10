@@ -24,4 +24,4 @@ class Solution {
 
         return dp[i][free] = Math.max(c1,c2);
     }
-}
+} 
